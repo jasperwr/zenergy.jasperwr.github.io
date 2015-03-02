@@ -1,0 +1,34 @@
+---
+---
+
+@import "materialize";
+@import "color";
+
+body {
+    background: $shakespeare;
+}
+
+header {
+    background: url(../img/photo-1413896235942-39c2eb7cd584.jpg);
+    height: 60%;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    
+    h1 {
+        color: $royal-heath
+    }
+}
+
+#promotable {
+    background: $bright-turquoise
+}
+
+.bt {
+    background-color: $bright-turquoise
+}
+
+
+.mh {
+    height: 400px;
+}

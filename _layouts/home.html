@@ -1,0 +1,66 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <script src="{{ "/js/jquery.min.js" | prepend: site.url }}"></script>
+  <link rel="stylesheet" href="{{ "/css/home.css" | prepend: site.url }}">
+    <link rel="stylesheet" href="{{ "/css/hover.css" | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
+    <link href='http://fonts.googleapis.com/css?family=Merriweather|Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="{{ "/js/materialize.min.js" | prepend: site.url }}"></script>
+</head>
+<body>
+    <header class="valign-wrapper">
+            <h1 class="valign">Zenergy</h1>
+    </header>
+    <nav style="z-index:9999">
+          <ul class="right hide-on-med-and-down">
+              {% include menu.html %}
+          </ul>
+          <ul id="slide-out" class="side-nav">
+              {% include menu.html %}
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse" style="padding-left:10px"><i class="fa fa-bars"></i></a>
+    </nav>
+    <div class="row">
+      <div class="col l4 s12 center-align" id="promotable">
+        <i class="fa fa-info fa-5x"></i>
+          <p>{{ site.home.block1 }}</p>
+      </div>
+      <div class="col l4 s12 center-align" id="promotable">
+        <i class="fa fa-info fa-5x"></i>
+          <p>{{ site.home.block2 }}</p>
+      </div>
+      <div class="col l4 s12 center-align" id="promotable">
+        <i class="fa fa-info fa-5x"></i>
+          <p>{{ site.home.block3 }}</p>
+      </div>
+    </div>
+    <div class="container">
+        {% include collapsible.html %}
+    </div>
+    
+    <div class="row">
+        <div class="col l6 s12 bt mh">
+            <h3> Energychallenge </h3>
+            <p>{{site.home.info }}</p>
+        </div>  
+        <div class="col l6 s12 bt mh">
+            <h3> Agenda </h3>
+            {% include agenda.html %}
+        </div> 
+    </div>
+    
+    {% include footer.html %}
+
+    <script>
+        $(document).ready(function(){
+          $('.parallax').parallax();
+        });
+    </script>
+</body>
