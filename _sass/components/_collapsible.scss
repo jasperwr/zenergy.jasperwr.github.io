@@ -16,7 +16,7 @@
   height: $collapsible-height;
   line-height: $collapsible-height;
   padding: 0 1rem;
-  background-color: $collapsible-header-color;
+  background-color: #ffcdd2 ;
   border-bottom: 1px solid $collapsible-border-color;
 
   i {
@@ -31,7 +31,7 @@
 }
 
 .collapsible-body {
-    background-color: $royal-heath;
+    background-color: #ffcdd2 ;
   overflow: hidden;
   display: none;
   border-bottom: 1px solid $collapsible-border-color;
