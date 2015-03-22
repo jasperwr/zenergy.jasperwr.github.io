@@ -11,7 +11,7 @@ nav {
     height: 100%;
   }
 
-  a { color: #fff; }
+  a { color: $black; }
 
   @media #{$large-and-up} {
     a.button-collapse { display: none; }
