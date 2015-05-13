@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Over ons
 permalink: /about/
 keywords: energychallenge, zuidlaren, drenthe, sterren, winnen, duurzaam, energie
 ---
